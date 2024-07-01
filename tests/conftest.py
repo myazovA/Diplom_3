@@ -5,7 +5,7 @@ from helpers import *
 from data import Data
 import requests
 
-@pytest.fixture(params=['chrome'])
+@pytest.fixture(params=['chrome', 'firefox'])
 def driver(request):
     if request.param == 'firefox':
         options = webdriver.FirefoxOptions()
