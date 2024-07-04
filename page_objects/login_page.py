@@ -8,8 +8,8 @@ class LoginPage(BasePage):
 
     @allure.step('Открыть страницу восстановления пароля')
     def go_to_pass_recovery(self):
-        self.wait_visibility_of_element(LoginPageLocators.button_forgot_password)
-        self.click_on_element(LoginPageLocators.button_forgot_password)
+        self.wait_visibility_of_element(LoginPageLocators.BUTTON_FORGOT_PASSWORD)
+        self.click_on_element(LoginPageLocators.BUTTON_FORGOT_PASSWORD)
 
 
 
